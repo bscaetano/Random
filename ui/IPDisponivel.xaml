@@ -1,0 +1,21 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="IP Disponível" Height="400" Width="400" WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <StackPanel Margin="10">
+        <Label Content="Apenas teste ICMP - Escolha a Cidade" Margin="0,10"/>
+        <ComboBox Name="cmbCidade" />
+        <Button Name="btnVerificar" Content="Verificar IP" Margin="0,10"/>
+        <ProgressBar Name="pbScan"
+             Height="20"
+             Margin="0,10,0,10"
+             Minimum="0"
+             Maximum="100"/>
+
+	<ListBox Name="lstIPs"
+         Height="250"
+         ScrollViewer.VerticalScrollBarVisibility="Auto"
+         ScrollViewer.HorizontalScrollBarVisibility="Disabled"/>
+
+    </StackPanel>
+</Window>

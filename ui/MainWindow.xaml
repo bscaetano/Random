@@ -1,0 +1,55 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RedeApp"
+        Height="400"
+        Width="300"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Conteúdo principal -->
+        <StackPanel Grid.Row="0">
+
+            <Button Name="btnIP"
+                    Content="IP Disponível"
+                    Height="40"
+                    Margin="0,0,0,10"/>
+
+            <Button Name="btnConfig"
+                    Content="Configurar Rede"
+                    Height="40"
+                    Margin="0,0,0,10"/>
+
+            <Button x:Name="btnProxy"
+                    Content="Configurar Proxy"
+                    Height="40"
+                    Margin="0,0,0,10"/>
+        
+
+            <Button Name="btnCadastrar"
+                    Content="Cadastrar Cidade"
+                    Height="40"
+                    Margin="0,0,0,10"/>
+
+            <Button Name="btnExcluir"
+                    Content="Excluir Cidade"
+                    Height="40"
+                    Margin="0,0,0,10"/>
+
+        </StackPanel>
+
+        <!-- Assinatura -->
+        <TextBlock Grid.Row="1"
+                   Text="Por: Bruno Santos Caetano — Ano: 2026"
+                   HorizontalAlignment="Center"
+                   Margin="0,15,0,0"
+                   FontSize="11"
+                   Foreground="Gray"
+                   Opacity="0.7"/>
+    </Grid>
+</Window>

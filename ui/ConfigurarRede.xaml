@@ -1,0 +1,10 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Configurar Rede" Height="200" Width="350"
+	WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <StackPanel Margin="10">
+        <ComboBox Name="cmbCidade"/>
+        <Button Name="btnAplicar" Content="Aplicar Configuração" Margin="0,10"/>
+        <TextBlock Name="lblStatus"/>
+    </StackPanel>
+</Window>
